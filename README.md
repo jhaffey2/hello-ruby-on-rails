@@ -1,6 +1,9 @@
 # hello-ruby-on-rails
-## Documentation for Setting Up a Ruby on Rails Dev Environment and Project
+
+## Setting Up a New Ruby on Rails Project
 
 1) Clone the repository
 
-2) `docker build -t rails-new -f Dockerfile.rails-new`
+2) `docker build -t rails-new -f Dockerfile.rails-new .`
+
+3) `docker run -it -v [PATH_TO_APP]:/app rails-new rails new --skip-bundle [NAME_OF_APP]`
