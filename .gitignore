@@ -1,0 +1,11 @@
+.swp
+.swo
+/log
+/tmp
+.DS_Store
+.env
+/.bundle
+/vendor/bundle
+.rvmrc
+/public/assets
+/node_modules
