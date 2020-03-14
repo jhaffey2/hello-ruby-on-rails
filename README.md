@@ -6,4 +6,4 @@
 
 2) `docker build -t rails-new -f Dockerfile.rails-new .`
 
-3) `docker run -it -v [PATH_TO_APP]:/app rails-new rails new --skip-bundle [NAME_OF_APP]`
+3) `docker run -it -v [PATH_TO_APP]:/app rails-new rails new --skip-bundle --skip-webpack-install [NAME_OF_APP]`
