@@ -24,6 +24,8 @@
 
 - `docker-compose up [-d]`
 
+- `docker-compose down`
+
 - `docker-compose run --rm app rails c`
 
 - `docker-compose run --rm app rake db:create db:migrate db:test:prepare`
@@ -31,6 +33,8 @@
 - `docker-compose run --rm app rspec`
 
 - `docker-compose run --rm -p 127.0.0.1:3000:3000 app`
+
+- `docker-system prune [-a]`
 
 ## Notes
 
