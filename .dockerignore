@@ -1,8 +1,12 @@
-Dockerfile
-docker-compose.yml
-README.md
-log/*
-tmp/*
 .git
 .gitignore
 .DS_Store
+docker-compose.yml
+Dockerfile
+README.md
+log/*
+tmp/*
+/node_modules
+/.bundle
+/public/assets
+/_*/

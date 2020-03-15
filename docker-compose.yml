@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  app:
+    image: jhaffey2/app-name:latest
+    build:
+      context: .
+    volumes:
+      - ./:/app:cached
+      - tmp:/app/tmp
+    ports:
+      - 127.0.0.1:3000:3000
+
+volumes:
+  tmp:

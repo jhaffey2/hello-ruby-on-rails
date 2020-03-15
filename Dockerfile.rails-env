@@ -6,14 +6,15 @@ RUN mkdir -p /app
 WORKDIR /app
 
 # Install packages.
-RUN apk update \
-    && apk upgrade \
+RUN apk update --no-cache \
+    && apk upgrade --no-cache \
     && apk add build-base \
     && apk add nodejs \
-    && apk add tzdata \
     && apk add libxslt-dev \
     && apk add libxml2-dev \
     && apk add sqlite-dev \
+    && apk add tzdata \
+    && apk add postgresql-dev \
     && apk add git \
     && apk add yarn
 
